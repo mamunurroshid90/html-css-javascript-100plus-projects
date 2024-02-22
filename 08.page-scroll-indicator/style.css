@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  padding: 3rem;
+}
+.section {
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 2rem;
+  color: #fff;
+  margin: 20px 0;
+}
+.title {
+  margin-bottom: 15px;
+}
+
+.scroll_indicator {
+  height: 5px;
+  width: calc(100% - 6em);
+  position: fixed;
+  top: 10px;
+  left: 3em;
+  border-radius: 3px;
+}
+.scroll_indicator .progress {
+  height: 100%;
+  width: 20px;
+  border-radius: 3px;
+  background: linear-gradient(
+    to right,
+    rgb(233, 213, 255),
+    rgb(192, 132, 252),
+    rgb(107, 33, 168)
+  );
+  transition: width 0.1s;
+}
